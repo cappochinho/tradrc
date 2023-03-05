@@ -1,6 +1,6 @@
 # Tradrc
  <br>
-<p>Tradrc (Trading Bot) -> <a href="https://github.com/cappochinho/cryptocurrency_trading_bot/blob/main/tradingBot.py">tradingBot.py</a></p>
+<p>Tradrc (Trading Bot) -> <a href="https://github.com/cappochinho/tradrc/tradingBot.py">tradingBot.py</a></p>
     <p>This is the entry point to the trading bot</p>
     <p>Usage: ./tradingBot.py ticker symbol investment</p>
     <p>Example: ./tradingBot.py ethusdt 100</p>
