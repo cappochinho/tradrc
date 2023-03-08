@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tradrc</title>
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
         <header>
-            <img src="assets/Tradrc.png" alt="Cover Photo">
-            <h1 id="heading">Tradrc</h1>
-            <h3 id="headingdescription">Your cryptocurrency trader on command</h3>
+            <img src="assets/Tradrc.png" alt="Cover Photo" style="display: block; width: 30%;">
+            <h1 style="margin-top: 50px; margin-left: 50px;">Tradrc</h1>
+            <h3 style="margin-bottom: 50px; margin-left: 50px;">Your cryptocurrency trader on command</h3>
         </header>
 
-        <figure>
-            <img src="assets/binance_api_2.png" alt="Binance API Page" id="fig11">
-            <img src="assets/my_api.png" alt="Setting up API keys" id="fig12">
-            <figcaption>Setting up API key on Binance</figcaption>
+        <figure style="display: flexbox; width: 50%; text-align: center;">
+            <figcaption>Obtain API keys from Binance.com</figcaption>
+            <img src="assets/my_api.png" alt="Obtain API keys from Binance.com">
+        </figure>
+
+        <figure style="display: flexbox; width: 50%; text-align: center; margin-top: 10px; margin-bottom: 50px;">
+            <figcaption>Add API keys to BinanceKeys.py file</figcaption>
+            <img src="assets/new_scrn.png" alt="add api keys"> 
+        </figure>
+
+        <figure
+            style="display: flexbox; width: 50%; text-align: center; margin-top: 10px; margin-bottom: 20px;">
+            <figcaption style="margin-bottom: 30px;">Now execute the following example command: ./tradingBot.py ethusdt 100</figcaption>
+            <img src="assets/execute.png" alt="execute trade">
+            <figcaption>Trade execution</figcaption>
         </figure>
 
         <figure>
-            <img src="assets/add_keys.png" alt="Add API keys to code">
-            <figcaption>Add API keys to code</figcaption>
-        </figure>
-        
-        <p>
-            Ensure that you have set up your Python environment with all the trading bot's requirements💡
-        </p>
-        <p>Use the following example command on the command line</p>
-        <p>./tradingBot.py btcusdt 12</p>
-        <figure>
-            <img src="assets/order not executed.png" alt="Tradrc in action: Order not executed">
-            <figcaption>Image shows order not executed due to lack of funds on Binance account</figcaption>
+            <figcaption>Audio Instructions for Tradrc:</figcaption>
+            <audio controls src="assets/Tradrc Instructions.mp3">
+                <a href="assets/Tradrc Instructions.mp3">
+                    Download audio
+                </a>
+            </audio>
         </figure>
 
-        <audio src="assets/Tradrc Instructions.mp3" autoplay muted="true">Audio Instructions</audio>
-        <a href="https://github.com/cappochinho/tradrc/">Try Tradrc!</a>
+        <footer style="margin-left: 60px; margin-top: 50px;">
+            <h4>About</h4>
+            <p>This project was solely authored by myself, Edward Junior Agyemang-Prempeh. It came about when I wanted to automate my cryptocurrency trading activities on Binance.
+                I decided to write my own bot for trading cryptocurrencies after I discovered that trading bots were unreasonably costly and quite complex to use. Tradrc was born
+                out of necessity and will be improved over time as trading algorithms and markets evolve.
+            </p>
 
-        <footer>
-            <a href="mailto:edwardprempeh18@gmail.com"><strong>Send Email</strong></a>
-            <p>&copy; 2023 Tradrc, Inc</p>
+            <a href="https://www.linkedin.com/in/edward-junior-agyemang-prempeh-1823641a5/">LinkedIn</a>
+            <a href="https://www.github.com/cappochinho">GitHub</a>
+            <a href="mailto:edwardprempeh18@gmail.com"><strong>Email Me!</strong></a>
+            <br>
+            <a href="https://github.com/cappochinho/tradrc">Link to the project</a>
+            <p>Copyright &copy; 2023 Tradrc, Inc</p>
         </footer>
     </body>
 </html>
