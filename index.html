@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradrc</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <style>
+        /* Reset */
         body {
             margin: 0;
             padding: 0;
         }
 
+        /* Header */
         header {
-            background-color: #222;
+            background: linear-gradient(135deg, #4caf50, #2e7d32);
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header img {
             width: 150px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 10px 0;
         }
 
         header h3 {
             font-weight: 300;
             margin: 5px 0 20px;
+            font-style: italic;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
         }
 
         figure {
@@ -38,81 +48,102 @@
             flex-direction: column;
             align-items: center;
             margin: 30px auto;
-            width: 80%;
-            max-width: 700px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        figure:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         figure img {
             max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid #2e7d32;
         }
 
         figure figcaption {
-            margin-top: 15px;
+            padding: 15px;
             font-size: 1rem;
             color: #555;
+            text-align: center;
         }
 
         audio {
             margin-top: 20px;
+            outline: none;
         }
 
+        /* Footer */
         footer {
-            background-color: #222;
+            background: linear-gradient(135deg, #2e7d32, #4caf50);
             color: #fff;
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
+            margin-top: 40px;
         }
 
         footer h4 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
 
         footer p {
-            font-size: 1rem;
-            line-height: 1.6;
-            max-width: 700px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
             margin: 0 auto 20px;
         }
 
         footer a {
-            color: #1da1f2;
+            color: #ffeb3b;
             text-decoration: none;
             font-weight: bold;
             margin: 0 10px;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
+            color: #fff;
             text-decoration: underline;
         }
 
         footer strong {
-            color: #ff9800;
+            color: #ffeb3b;
         }
 
         footer p:last-of-type {
             margin-top: 20px;
             font-size: 0.9rem;
-            color: #aaa;
+            color: #ccc;
         }
 
+        /* Responsiveness */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             header h3 {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             footer h4 {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
+            }
+
+            footer p {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="assets/Tradrc.png" alt="Cover Photo">
@@ -161,4 +192,5 @@
         <p>Copyright &copy; 2023 Tradrc, Inc</p>
     </footer>
 </body>
+
 </html>
